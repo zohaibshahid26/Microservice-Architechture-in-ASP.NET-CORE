@@ -31,3 +31,17 @@ This project is a Web API built using ASP.NET Core for managing blog posts. It a
       "createdAt": "2024-06-16T15:24:39.636Z",
       "categoryId": 1
   }
+- **PUT /api/BlogPosts**  
+  Updates blog post.  
+  Request body should be in JSON format:
+  ```json
+  {
+      "title": "Updated Blog Post",
+      "content": "This is the content of the updated blog post.",
+      "author": "John Doe",
+      "createdAt": "2024-06-16T15:24:39.636Z",
+      "categoryId": 1
+  }
+  
+- **DELETE /api/BlogPosts/{id}**  
+ Delete a specific blog post by its ID.
